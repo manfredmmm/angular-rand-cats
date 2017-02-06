@@ -12,6 +12,6 @@ export class HeaderComponent {
   @Input() title: string;
 
   changeTitle(name: string): void {
-    this.title = `AngularJS rocks! And ${name} is da best!`;
+    this.title = `AngularJS rocks! And ${name} is da best! :O`;
   }
 }

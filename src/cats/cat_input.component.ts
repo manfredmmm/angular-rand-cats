@@ -3,11 +3,21 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "cat-input",
   template: `
-    <br>
-    <label>Insert name</label>
-    <input type="text" [(ngModel)]="name">
-    <span>Name: {{ name }}</span>
-  `
+    <div class="input__container">
+      <label>Insert the cat name:</label>
+      <input type="text" [(ngModel)]="name">
+      <span  class="margin">Name: {{ name }}</span>
+    </div>
+  `,
+  styles: [`
+    .margin {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .input__container {
+      margin: 10px 0;
+    }
+  `]
 })
 
 export class CatInputComponent {
